@@ -9,6 +9,6 @@ urlpatterns = patterns('',
 
 # Basic pages
 urlpatterns += patterns('roscoesdigs.apps.basic.views',
-    url(r'^$', 'render_template', {'template': 'basic_index.html'}, name='index'),
-    url(r'^gallery/$', 'render_template', {'template': 'basic_gallery.html'}, name='gallery'),
+    url(r'^$',          'render_template', {'template': 'basic_index.html'}, name='index'),
+    url(r'^gallery/$',  'render_template', {'template': 'basic_gallery.html'}, name='gallery'),
 )

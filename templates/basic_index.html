@@ -1,6 +1,285 @@
 {% extends '_base.html' %}
 
+{% block navbar %}
+  {% include '_navbar_index.html' %}
+{% endblock %}
+
 {% block content %}
-Helloooooo world!
+
+<div class='band band-01'>
+  <a href="/" title="Roscoe's Digs Homepage" class="logo">
+    <img src="{{STATIC_URL}}images/logo_white.png" alt="Roscoe's Digs" width="100" height="100">
+  </a>
+
+  <div class='rollback-menu-wrapper'>
+    <ul class="no-bullet inline-list rollback-menu">
+      <li><a href='#'>About</a></li>
+      <li><a href='#'>Gallery</a></li>
+      <li><a href='#'>Store</a></li>
+      <li><a href='#'>Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class='tagline tag-position-1'>
+    <div class='main-tag'>We dig dogs!</div>
+    <div class='sub-tag'>
+      We are <span class='brand-highlight'>Roscoe's Digs</span>, NYC's leading professional pet caretakers.
+      <span class='hard-to-fit'>Everyday we strive to provide your furry family member with individual care and attention at affordable prices.</span>
+    </div>
+  </div>
+</div>
+
+<div class='thick-orange-line'>
+</div>
+
+<div data-magellan-expedition="fixed">
+  <dl class="sub-nav">
+    <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
+    <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+  </dl>
+</div>
+
+<div class='row'>
+  <div class='small-12 column leading-header'>
+    <h1>Meet Your Walkers</h1>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-12 medium-4 medium-offset-1 columns'>
+    <div style='font-family: bariol_bold; font-size: 8rem;'>Hello!</div>
+  </div>
+  <div class='small-12 medium-7 columns'>
+    <p>Jon Snow is the bastard son of Eddard Stark, by a mother whose identity is a source of speculation.[1][2] He was raised by his father alongside his true-born half-siblings, but joins the Night's Watch whe</p>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-12 medium-6 columns text-center'>
+    <div class='small-12 medium-9 small-centered columns'>
+      <div class="th radius" href="#">
+        <img src="{{STATIC_URL}}images/grumpy_cat.jpg" class='circular-img'>
+      </div>
+      <h4>Jon Snow</h4>
+      <p class='bio-text'>
+        Jon Snow is the bastard son of Eddard Stark, by a mother whose identity is a source of speculation.[1][2] He was raised by his father alongside his true-born half-siblings, but joins the Night's Watch when he nears adulthood. He is constantly accompanied by his albino direwolf Ghost. At the beginning of A Game of Thrones, Jon is fourteen years old. He is one of the major POV characters in the books.
+      </p>
+    </div>
+  </div>
+
+  <div class='small-12 medium-6 columns text-center'>
+    <div class='small-12 medium-9 small-centered columns'>
+      <div class="th radius" href="#">
+        <img src="{{STATIC_URL}}images/grumpy_cat.jpg" class='circular-img'>
+      </div>
+      <h4>Arya Stark</h4>
+      <p class='bio-text'>
+        Arya Stark is the third child and second daughter of Lord Eddard and Lady Catelyn Stark. She is nine at the start of A Game of Thrones. She has five siblings: brothers Robb, Bran, Rickon, half-brother Jon Snow, and older sister Sansa.Like some of her siblings, she sometimes dreams that she is a direwolf.[1] Her own direwolf is Nymeria, who is named in reference to the Rhoynar warrior-queen of the same name.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-2 small-centered column'>
+    <hr>
+  </div>
+  <div class='small-12 column leading-header'>
+    <h1>Services & Pricing</h1>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-12 medium-3 column'>
+    <h4>Dog Walking</h4>
+  </div>
+  <div class='small-12 medium-9 column'>
+    <p>
+      All walks include a change of water, optional feeding and reinforcement of owner's training methods. We like to discuss with each owner their techniques, commands, leash handling, and more. We do our best not to disrupt any routines.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th width="250"></th>
+          <th width="250">Occasional Walks<br>(less than 3 times / wk)</th>
+          <th width="250">Weekly Plans<br>(3+ times / wk)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brief (15 mins)</td>
+          <td>$16.33</td>
+          <td>$11.98</td>
+        </tr>
+        <tr>
+          <td>Regular (30 mins)</td>
+          <td>$19.60</td>
+          <td>$15.25</td>
+        </tr>
+        <tr>
+          <td>Long (60 mins)</td>
+          <td>$22.86</td>
+          <td>$18.50</td>
+        </tr>
+        <tr>
+          <td>Per Additional Dog</td>
+          <td>$7.62</td>
+          <td>7.62</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      All of our walks are private by default. If we have another customer in your immediate area, we will offer you the chance for a paired walking. All paired walking’s must be cleared by the owners and are determined only after a meeting between the two dogs.
+    </p>
+  </div>
+</div>
+<br>
+<div class='row'>
+  <div class='small-12 medium-3 column'>
+    <h4 style='font-family: bariol_bold_italic;'>Overnight Dog Boarding</h4>
+  </div>
+  <div class='small-12 medium-9 column'>
+    <p>
+      We offer overnight boarding and dog sitting, in our home or yours. Since this is a home-based business and not a kennel, we can only accommodate few bookings at a time.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th width="250"></th>
+          <th width="250">24-hour Boarding<br>(With Us)</th>
+          <th width="250">24-hour Sitting<br>(Your Home)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>One Dog</td>
+          <td>$65.33 each day</td>
+          <td>$54.44 each day</td>
+        </tr>
+        <tr>
+          <td>Per Additional Dog</td>
+          <td>$32.66</td>
+          <td>$27.22</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class='row'>
+  <div class='small-2 small-centered column'>
+    <hr>
+  </div>
+  <div class='small-12 column leading-header'>
+    <h1>Other Services & Policies</h1>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-12 medium-6 column'>
+
+    <h4>'Oops' Clean up</h4>
+    <p>
+      Don't want the mess sitting till you get home? Sign up and if there has been an 'oops', our walkers will clean it up! Includes #1 & #2 pick-up, refreshing of pee pads or any type of paper mess, toy mess, food spill, and more!<br>
+      ($7.62 per 'Oops')
+    </p>
+
+    <h4>Cat Sitter Visits</h4>
+    <p>
+      Care includes feeding, water change, brushing, play, and litter box cleaning.<br>
+      ($16.33 for 30 minutes; $7.62 for each additional cat)
+    </p>
+
+    <h4>Trips to a Vet or Groomer</h4>
+    <p>
+      $27.22 including transportation (if applicable)
+    </p>
+
+    <h4>Lock-out Help</h4>
+    <p>
+      Locked out? We'll get there as soon as possible to let you in!<br>
+      ($14.15 per incidence)
+    </p>
+
+  </div>
+
+  <div class='small-12 medium-6 column'>
+    <h4>Holidays</h4>
+    <p>
+      Thanksgiving, Christmas, and New Year’s walks are a flat $23. For all other holidays, standard rates apply. If you have the day off from work and do not need a visit (Memorial Day, Labor Day, etc.), 24 hour notice must be given or you may be charged Late Notice fee. Please make sure your apartment is well-stocked to handle all of your pets' needs.
+    </p>
+
+    <h4>Cancellations</h4>
+    <p>
+      Please cancel a scheduled walk in advance of 24 or more hours. $3.27 Late Notice fee will be charged if any walk or visit is not cancelled 24 hours ahead.
+    </p>
+
+    <h4>Payments</h4>
+    <p>
+      Payments are accepted by check, cash or via PayPal. $3.27 Late Payment fee will be charged if a given payment is paid more than 24 hours after the invoice due date.
+    </p>
+
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-2 small-centered column'>
+    <hr>
+  </div>
+  <div class='small-12 column leading-header'>
+    <h1>Frequently Asked Questions</h1>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-12 medium-6 column'>
+    <h4>Why should I use Roscoe's Digs?</h4>
+    <p>
+      Roscoe’s Digs guarantees that your pet will be receiving the most loving and attentive care possible. We do not lump pets together on walks or cage them up! We aim to provide you with peace of mind, and to give your pets a great time!
+    </p>
+  </div>
+  <div class='small-12 medium-6 column'>
+    <h4>What will you need from me before we can get started?</h4>
+    <p>We'll need a few forms filled out (such as contracts, vet release, pet profile), information on the services you'd like, and agreed method of accessing your apartment.</p>
+  </div>
+  <div class='small-12 medium-6 column'>
+    <h4>Are you bonded, insured and licensed?</h4>
+    <p>Roscoe’s Digs is fully licensed and bonded, and we can provide documentation upon request.</p>
+  </div>
+  <div class='small-12 medium-6 column'>
+    <h4>Who are the pet sitters who will be coming into my home?</h4>
+    <p>
+      Roscoe’s Digs hires the most dedicated, experienced animal lovers. Each employee is professionally trained, and put through a background check for everyone’s security.
+    </p>
+  </div>
+  <div class='small-12 medium-6 column'>
+    <h4>How do I make my house keys available to my pet sitter?</h4>
+    <p>During the Meet-and-Greet session we can discuss a suitable method of accesing your apartment. Typically the pet owners give Roscoe’s Digs a set of keys. If you live in a doorman building you can choose to leave a set with the doorman for us.</p>
+  </div>
+  <div class='small-12 medium-6 column'>
+    <h4>Do you have references? Can I contact your clients for more details on what it's like to work with your company?</h4>
+    <p>Any time! We have a plenty of references, current and previous. Request a few to get the feel of how we work!</p>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='small-2 small-centered column'>
+    <hr>
+  </div>
+  <div class='small-12 column leading-header'>
+    <h1>Testimonials</h1>
+  </div>
+</div>
+
+<div class='thick-orange-line'>
+</div>
+
+<div class='band band-02'>
+</div>
+
+<div class='footer'>
+  asfd
+</div>
 
 {% endblock %}
